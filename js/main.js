@@ -433,7 +433,7 @@ function renderTimeline(data) {
             <p class="timeline-event-summary">${project.summary}</p>
             <span class="timeline-event-cta" aria-hidden="true">
               <svg viewBox="0 0 62 14" width="62" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 7h60M54 1l6 6-6 6" stroke="currentColor" stroke-linecap="round"/>
+                <path d="M0 7h60M54 1l6 6" stroke="currentColor" stroke-linecap="round"/>
               </svg>
             </span>
             <span class="sr-only">View details</span>
