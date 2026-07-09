@@ -2438,6 +2438,29 @@ body.work-panel-open .left-panel {
   pointer-events: none;
 }
 
+body.special-mode {
+  overflow: hidden;
+}
+
+.special-mode-canvas {
+  position: fixed;
+  inset: 0;
+  z-index: 1900;
+  width: 100vw;
+  height: 100vh;
+  background: var(--bg);
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  pointer-events: none;
+}
+
+body.special-mode .app-shell,
+body.special-mode .know-more-panel,
+body.special-mode .work-panel,
+body.special-mode .intro-screen {
+  opacity: 0;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

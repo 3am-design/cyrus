@@ -1067,6 +1067,126 @@ function setupSectionFocusReveal() {
   });
 }
 
+function setupSpecialMode() {
+  const state = {
+    active: false,
+    canvas: null,
+    timer: null,
+    frame: 0,
+  };
+
+  const getCssColor = (value, fallback) => {
+    if (!value || value === 'transparent' || value === 'rgba(0, 0, 0, 0)') return fallback;
+    return value;
+  };
+
+  const getThemeColor = (name, fallback) => {
+    const bodyValue = getComputedStyle(document.body).getPropertyValue(name).trim();
+    const value = bodyValue || getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+    return value || fallback;
+  };
+
+  const getBlockColor = (x, y) => {
+    const bg = getThemeColor('--bg', '#000000');
+    const text = getThemeColor('--text', '#ffffff');
+    const element = document.elementFromPoint(x, y);
+    if (!element || element === state.canvas) return bg;
+
+    const target = element.closest?.(
+      'h1, h2, h3, h4, p, a, button, span, li, img, svg, .brand-logo, .timeline-event, .skill-row, .contact-row, .content-section'
+    ) || element;
+    const style = getComputedStyle(target);
+    const background = getCssColor(style.backgroundColor, null);
+    const border = getCssColor(style.borderColor, null);
+    const color = getCssColor(style.color, text);
+
+    if (target.matches?.('img, svg, .brand-logo')) return color;
+    if (background) return Math.random() > 0.45 ? background : color;
+    if (border && Math.random() > 0.72) return border;
+    return color;
+  };
+
+  const renderPixelFrame = () => {
+    if (!state.active || !state.canvas) return;
+
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+    const sizes = [14, 10, 12, 8, 16];
+    const block = sizes[state.frame % sizes.length];
+    const offsetX = [0, 5, -4, 7, -6][state.frame % 5];
+    const offsetY = [0, -4, 6, 5, -5][state.frame % 5];
+    const canvas = state.canvas;
+    const context = canvas.getContext('2d');
+    const bg = getThemeColor('--bg', '#000000');
+
+    canvas.width = width;
+    canvas.height = height;
+    context.imageSmoothingEnabled = false;
+    context.fillStyle = bg;
+    context.fillRect(0, 0, width, height);
+
+    for (let y = -block + offsetY; y < height + block; y += block) {
+      for (let x = -block + offsetX; x < width + block; x += block) {
+        const sampleX = Math.min(width - 1, Math.max(0, x + block / 2));
+        const sampleY = Math.min(height - 1, Math.max(0, y + block / 2));
+        const element = document.elementFromPoint(sampleX, sampleY);
+        if (!element || element === document.body || element === document.documentElement) {
+          if (Math.random() > 0.02) continue;
+        }
+        if (
+          element?.classList?.contains('content-section')
+          || element?.classList?.contains('content-scroll')
+          || element?.classList?.contains('app-shell')
+        ) {
+          if (Math.random() > 0.015) continue;
+        }
+
+        context.globalAlpha = 0.82 + Math.random() * 0.18;
+        context.fillStyle = getBlockColor(sampleX, sampleY);
+        context.fillRect(Math.round(x), Math.round(y), block, block);
+      }
+    }
+
+    context.globalAlpha = 1;
+    state.frame += 1;
+  };
+
+  const stopSpecialMode = () => {
+    state.active = false;
+    window.clearInterval(state.timer);
+    state.timer = null;
+    document.body.classList.remove('special-mode');
+    state.canvas?.remove();
+    state.canvas = null;
+  };
+
+  const startSpecialMode = () => {
+    state.active = true;
+    state.frame = 0;
+    state.canvas = document.createElement('canvas');
+    state.canvas.className = 'special-mode-canvas';
+    state.canvas.setAttribute('aria-hidden', 'true');
+    document.body.appendChild(state.canvas);
+    renderPixelFrame();
+    document.body.classList.add('special-mode');
+    state.timer = window.setInterval(renderPixelFrame, 140);
+  };
+
+  window.addEventListener('resize', () => {
+    if (state.active) renderPixelFrame();
+  }, { passive: true });
+
+  document.addEventListener('keydown', (event) => {
+    const target = event.target;
+    const isTyping = target?.closest?.('input, textarea, select, [contenteditable="true"]');
+    if (isTyping || event.metaKey || event.ctrlKey || event.altKey || event.repeat) return;
+    if (event.key.toLowerCase() !== 'p') return;
+
+    if (state.active) stopSpecialMode();
+    else startSpecialMode();
+  });
+}
+
 function setupCustomCursor() {
   const supportsCustomCursor = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -1267,6 +1387,7 @@ async function init() {
     setupSectionFocusReveal();
     setupInteractions(sectionPreviews);
     setupPopupScrollbars();
+    setupSpecialMode();
     setupCustomCursor();
 
     updateTimelineLine();
