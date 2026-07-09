@@ -30,6 +30,8 @@
   --text-label: 0.8125rem;
   --cursor-size: 11px;
   --cursor-discover-size: 78px;
+  --cursor-discover-bg: #000000;
+  --cursor-discover-text: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -44,6 +46,8 @@
     --popup-bg: #0d0d0d;
     --scrollbar-thumb: var(--text-light);
     --scrollbar-thumb-hover: var(--text-muted);
+    --cursor-discover-bg: #ffffff;
+    --cursor-discover-text: #000000;
   }
 }
 
@@ -58,6 +62,8 @@ body[data-theme='dark'] {
   --popup-bg: #0d0d0d;
   --scrollbar-thumb: var(--text-light);
   --scrollbar-thumb-hover: var(--text-muted);
+  --cursor-discover-bg: #ffffff;
+  --cursor-discover-text: #000000;
 }
 
 body[data-theme='light'] {
@@ -71,6 +77,8 @@ body[data-theme='light'] {
   --popup-bg: #ffffff;
   --scrollbar-thumb: var(--text-light);
   --scrollbar-thumb-hover: var(--text-muted);
+  --cursor-discover-bg: #000000;
+  --cursor-discover-text: #ffffff;
 }
 
 *,
@@ -142,7 +150,7 @@ body {
   content: 'DISCOVER';
   display: block;
   opacity: 0;
-  color: #000000;
+  color: var(--cursor-discover-text);
   font-family: var(--font-display);
   font-size: 10px;
   font-weight: 500;
@@ -155,7 +163,7 @@ body {
 .cursor-square.is-discover {
   width: var(--cursor-discover-size);
   height: var(--cursor-discover-size);
-  background: #ffffff;
+  background: var(--cursor-discover-bg);
   mix-blend-mode: normal;
 }
 
