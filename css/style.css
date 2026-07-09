@@ -2098,6 +2098,10 @@ body[data-theme='dark'] .theme-toggle:hover {
     padding: 6.5rem var(--section-pad-x) 5rem;
   }
 
+  .work-headline {
+    white-space: normal;
+  }
+
   .section-index {
     top: 5rem;
     left: var(--section-pad-x);
@@ -2368,9 +2372,10 @@ body[data-theme='dark'] .theme-toggle:hover {
   }
 
   .ai-era-flow {
-    flex-wrap: wrap;
-    white-space: normal;
-    gap: 0.75rem 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 1.35rem;
     font-size: 0.8125rem;
   }
 
@@ -2379,7 +2384,22 @@ body[data-theme='dark'] .theme-toggle:hover {
   }
 
   .ai-era-flow li::before {
-    margin-right: 1rem;
+    content: none;
+  }
+
+  .ai-era-flow li::after {
+    content: '+';
+    display: inline-block;
+    margin-left: 0.9rem;
+    color: var(--text-light);
+  }
+
+  .ai-era-flow li:nth-last-child(2)::after {
+    content: '=';
+  }
+
+  .ai-era-flow li:last-child::after {
+    content: none;
   }
 
   .skills-grid {
