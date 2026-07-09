@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lee Ho Sing Cyrus — Full Stack Developer Portfolio">
+  <meta name="theme-color" content="#f8f8f8">
+  <title>Hello. I am Cyrus</title>
+  <link rel="icon" href="assets/cyrus-logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css?v=20260709-popup-header-gap">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="intro-screen" id="intro-screen" aria-hidden="true">
+    <div class="intro-lines" id="intro-lines"></div>
+  </div>
+
+  <div class="app-shell" id="app-shell">
+    <aside class="left-panel" id="left-panel" aria-label="Portfolio identity">
+      <div class="left-panel-default" id="left-panel-default">
+        <span class="brand-logo" role="img" aria-label="Cyrus"></span>
+      </div>
+      <div class="left-panel-hover hidden" id="left-panel-hover">
+        <p class="panel-label" id="left-panel-section"></p>
+        <ul class="panel-bullets" id="left-panel-bullets"></ul>
+      </div>
+    </aside>
+
+    <main class="content-scroll styled-scrollbar" id="content-scroll">
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle light/dark mode" aria-pressed="false">
+        <svg class="theme-icon theme-icon-sun" viewBox="0 0 22 22" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="4.2" stroke="currentColor" stroke-width="1.3"/><g stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><path d="M11 1.6v2.3"/><path d="M11 18.1v2.3"/><path d="M20.4 11h-2.3"/><path d="M3.9 11H1.6"/><path d="M17.6 4.4l-1.6 1.6"/><path d="M6 16l-1.6 1.6"/><path d="M17.6 17.6L16 16"/><path d="M6 6L4.4 4.4"/></g></svg>
+        <svg class="theme-icon theme-icon-moon" viewBox="0 0 22 22" fill="none" aria-hidden="true"><path d="M18.5 13.4A8.2 8.2 0 1 1 8.6 3.5a6.6 6.6 0 0 0 9.9 9.9z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+      </button>
+      <section id="about" class="content-section" data-section="About">
+        <p class="section-index">01 / About</p>
+        <div class="about-header">
+          <h2 class="about-name" id="about-name"></h2>
+          <p class="about-role" id="about-role"></p>
+          <p class="about-subhead" id="about-subhead"></p>
+        </div>
+        <div class="about-intro" id="about-text"></div>
+        <button type="button" class="know-more-btn" id="know-more-btn">Discover</button>
+      </section>
+
+      <section id="ai-era" class="content-section" data-section="AI Era">
+        <p class="section-index" id="ai-era-index">02 / AI Era</p>
+        <div class="ai-era-header">
+          <h2 class="ai-era-title" id="ai-era-title"></h2>
+          <p class="ai-era-kicker" id="ai-era-kicker"></p>
+        </div>
+        <div class="ai-era-body" id="ai-era-body"></div>
+      </section>
+
+      <section id="work" class="content-section work-section" data-section="Work">
+        <p class="section-index">03 / Work</p>
+        <h2 class="section-headline work-headline">Experience &amp; projects</h2>
+        <div class="timeline" id="timeline"></div>
+      </section>
+
+      <section id="skills" class="content-section" data-section="Skills">
+        <p class="section-index">04 / Skills</p>
+        <h2 class="section-headline skills-headline">My skills</h2>
+        <div class="skills-grid" id="skills-grid"></div>
+      </section>
+
+      <section id="contact" class="content-section" data-section="Contact">
+        <p class="section-index">05 / Contact</p>
+        <h2 class="section-headline contact-headline">Let's build<br>something together.</h2>
+        <div class="contact-list" id="contact-list"></div>
+      </section>
+    </main>
+
+    <aside class="sidebar" id="sidebar">
+      <nav class="right-nav" id="right-nav" aria-label="Section navigation">
+        <div class="right-nav-line" id="right-nav-line"></div>
+        <div class="right-nav-links" id="right-nav-links"></div>
+      </nav>
+
+      <aside class="rail" id="rail" aria-label="Section menu">
+        <div class="rail-line rail-line-top"></div>
+        <button class="rail-toggle" id="rail-toggle" aria-label="Toggle section menu" aria-expanded="false">
+          <span class="rail-icon-open" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+          <span class="rail-icon-close hidden" aria-hidden="true">×</span>
+        </button>
+        <div class="rail-line rail-line-bottom"></div>
+      </aside>
+    </aside>
+  </div>
+
+  <div class="know-more-panel" id="know-more-panel" aria-hidden="true" inert>
+    <div class="know-more-inner styled-scrollbar">
+      <div class="know-more-header">
+        <p class="know-more-label" id="know-more-label">About</p>
+        <button type="button" class="know-more-close" id="know-more-close" aria-label="Close">Close</button>
+      </div>
+      <div class="know-more-content styled-scrollbar" id="know-more-content"></div>
+    </div>
+  </div>
+
+  <div class="work-panel" id="work-panel" aria-hidden="true" inert>
+    <div class="work-panel-inner styled-scrollbar" id="work-panel-inner">
+      <div class="work-panel-header">
+        <p class="work-panel-label" id="work-panel-label">Project</p>
+        <div class="work-panel-actions">
+          <button type="button" class="work-panel-nav work-panel-nav--prev" id="work-panel-prev" aria-label="Previous project" disabled>←</button>
+          <button type="button" class="work-panel-nav work-panel-nav--next" id="work-panel-next" aria-label="Next project" disabled>→</button>
+          <button type="button" class="work-panel-close" id="work-panel-close" aria-label="Close">Close</button>
+        </div>
+      </div>
+      <div class="work-panel-content styled-scrollbar" id="work-panel-content"></div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

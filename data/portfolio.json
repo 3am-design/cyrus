@@ -1,0 +1,462 @@
+{
+  "meta": {
+    "siteTitle": "Hello. I am Cyrus",
+    "language": "en",
+    "fallbackLanguage": "zh",
+    "theme": "light",
+    "lastUpdated": "2026-07-09"
+  },
+  "intro": {
+    "lines": [
+      "> initializing...",
+      "> loading portfolio...",
+      "> welcome."
+    ]
+  },
+  "hero": {
+    "name": "Lee Ho Sing Cyrus",
+    "displayName": "Cyrus Lee",
+    "title": "Full Stack Developer",
+    "tagline": "Full-stack developer who excels where frontend and backend must work as one — integration, business logic, and delivery under pressure.",
+    "cta": {
+      "primary": { "label": "View Projects", "target": "#work" },
+      "secondary": { "label": "Contact Me", "target": "#contact" }
+    }
+  },
+  "about": {
+    "subhead": ["Integrator.", "Builder.", "Problem solver."],
+    "paragraphs": [
+      "Full-stack developer with 6 years of experience building production systems in Laravel, Vue, and JavaScript. Core strengths include FE/BE integration and delivery under pressure.",
+      "Since 2026, I have led team AI adoption at FirmStudio — evaluating agent solutions, gathering colleague feedback, and rolling out company-wide AI-assisted workflows, with clear requirements and human communication at the centre."
+    ],
+    "highlights": [
+      "Full-stack integration — developed KNSM, a multi-campus platform serving 20+ schools",
+      "Backend & crisis delivery — HKAB ops turnaround (20+ min to 5–10 min); DrugInSport 10k+ import",
+      "Led team AI adoption — evaluated tools, gathered feedback, and rolled out AI-assisted workflows company-wide"
+    ],
+    "longForm": {
+      "title": "More about the work",
+      "sections": [
+        {
+          "title": "Where the value sits",
+          "text": "Full-stack developer with 6 years of experience in Laravel, Vue, and JavaScript production systems. The clearest value lies in FE/BE integration, backend problem-solving, and delivery under pressure — not in competing with specialists on depth alone. Selected work includes KNSM, a Po Leung Kuk kindergarten platform serving 20+ schools; DrugInSport's 10,000+ drug-record import pipeline; and HKAB's 16-server on-premise operations revamp, where key procedures were cut from 20+ minutes to 5–10 minutes."
+        },
+        {
+          "title": "Turning ambiguity into working systems",
+          "text": "I do my best work when requirements are not yet fully clear and the system needs someone who can connect UI flow, backend logic, and real user operations. KNSM was the clearest example: a Vue 3 and Laravel platform serving 20+ schools, where I helped turn unclear early requirements into workable flows with designers and PMs, then kept delivery moving through frequent demos and steady communication."
+        },
+        {
+          "title": "Reliable when delivery gets difficult",
+          "text": "Over time, I have become the developer trusted with backend-heavy or difficult delivery work: large imports, production operations, deployment scripts, and troubled project takeovers. DrugInSport, HKAB, and similar work built my backend depth because the problems were not only technical — they required fast execution, clear reporting, and honest communication when trust was at risk."
+        },
+        {
+          "title": "Designing for people who operate the system",
+          "text": "A recurring part of my work is turning complex business rules into systems that non-technical users can operate with confidence. Whether it is a CMS editor, school administrator, operations team, or POS user, I care about clear flows, visible feedback, sensible defaults, and documentation that supports real work instead of becoming a workaround for poor design."
+        },
+        {
+          "title": "Led team AI adoption",
+          "text": "Since 2026, I have led FirmStudio's team AI adoption — evaluating agent solutions, gathering colleague feedback, and recommending Cursor for stable regional support in Hong Kong. The rollout built on practical wins such as AI-ready documentation from the Wellcome Lucky Draw revamp, extending AI-assisted workflows across daily development and team collaboration."
+        }
+      ]
+    }
+  },
+  "aiEra": {
+    "indexLabel": "02 / AI Era",
+    "navLabel": "AI Era",
+    "kicker": "On work, tools, and what remains human",
+    "title": "In the AI Era",
+    "statement": "AI changes how fast we can build, but the work itself has not changed. The real work is still understanding people, asking the right questions, shaping clear requirements, and designing systems that help non-technical users work better.",
+    "principles": [
+      {
+        "label": "01 / Listen",
+        "title": "Start with the human need",
+        "text": "Before choosing tools or writing code, the important work is understanding what clients are actually trying to solve."
+      },
+      {
+        "label": "02 / Shape",
+        "title": "Turn ambiguity into workflow",
+        "text": "Clear requirements, UI flow, and business logic give AI the direction it needs to produce useful work."
+      },
+      {
+        "label": "03 / Build",
+        "title": "Use AI with judgment",
+        "text": "AI removes friction, but responsibility stays human: verify outputs, design sound systems, and make the final call."
+      }
+    ],
+    "flow": [
+      "Human need",
+      "Clear requirement",
+      "AI-assisted build",
+      "Better system"
+    ]
+  },
+  "skills": [
+    {
+      "category": "Languages",
+      "items": ["PHP", "JavaScript", "TypeScript", "HTML", "CSS", "SQL"]
+    },
+    {
+      "category": "Frameworks",
+      "items": ["Laravel", "Vue.js", "Node.js", "jQuery", "Bootstrap"]
+    },
+    {
+      "category": "Database & Integration",
+      "items": ["MySQL", "SQL Server", "REST APIs", "POS API integration", "Payment gateway integration", "Oracle accounting integration"]
+    },
+    {
+      "category": "AI & Workflow",
+      "items": ["Cursor", "AI-assisted development", "Cursor Skills", "AI agent evaluation", "Code scanning automation"]
+    },
+    {
+      "category": "Tools & Operations",
+      "items": ["Git", "GitHub", "Linux servers", "SSH deployment", "Operation scripts", "Technical documentation"]
+    }
+  ],
+  "experience": [
+    {
+      "id": "firmstudio",
+      "company": "FirmStudio",
+      "role": "Web Developer (Full Stack)",
+      "period": "Oct 2022",
+      "summary": "Full-stack developer building multi-tenant internal systems, client web applications, CMS platforms, and production operation tooling.",
+      "otherWork": "Alongside the highlighted projects below, ongoing work includes CMS development & integration (HKAB is one example), internal tooling, client web maintenance, production deployment scripts, and AI workflow adoption across the team.",
+      "technologies": ["PHP", "Laravel", "Vue 3", "TypeScript", "Inertia.js", "MySQL", "SQL Server", "Oracle accounting integration", "Cursor"]
+    },
+    {
+      "id": "echk",
+      "company": "ECHK",
+      "role": "Web Developer (Full Stack)",
+      "period": "Aug 2020 — May 2022",
+      "summary": "Full-stack web development across loyalty, e-commerce, booking, and POS-integrated online shop modules.",
+      "otherWork": "Additional loyalty, CMS, and client-specific web modules across the ECHK product suite.",
+      "technologies": ["PHP", "Laravel", "JavaScript", "Vue.js", "MySQL", "REST API", "Payment gateway integration"]
+    }
+  ],
+  "projects": [
+    {
+      "id": "wellcome-lucky-draw",
+      "company": "firmstudio",
+      "period": "2025 — 2026",
+      "title": "Wellcome Lucky Draw",
+      "subtitle": "Legacy Revamp, OCR Integration & AI-Ready Development Workflow",
+      "summary": "Took over and revamped a legacy lucky draw codebase, added Google OCR integration, and turned the documentation approach into reusable Cursor Skills for AI-assisted delivery.",
+      "description": "Took over the Wellcome Lucky Draw project in 2025, then reviewed and revamped the legacy codebase in 2026. The work reorganized scattered duplicate coding patterns, fixed security issues, integrated Google OCR for new requirements, and produced AI-friendly technical documentation so frontend and backend changes could be completed reliably with AI assistance.",
+      "highlights": [
+        "Reviewed and revamped a legacy PHP, JavaScript, jQuery, CSS, and MySQL codebase with duplicated logic and security weaknesses.",
+        "Integrated Google OCR to support new business requirements around receipt or document handling.",
+        "Created AI-friendly technical documentation that changed the project from AI-error-prone legacy code into a codebase AI agents could safely work on across frontend and backend.",
+        "Turned the documentation method into Cursor Skills, influencing the team's development workflow across other projects."
+      ],
+      "caseStudy": {
+        "context": "Wellcome Lucky Draw is a campaign project maintained across 2025 and 2026, built on a legacy PHP, JavaScript, jQuery, CSS, MySQL, and SQL stack.",
+        "problem": "The inherited codebase had scattered, repeated coding patterns and security issues. Its structure also made AI-assisted development risky: agents could easily misunderstand frontend and backend behavior and produce incorrect changes.",
+        "role": "Took over the project in 2025, then led the 2026 code review and revamp. I reorganized duplicated logic, fixed vulnerabilities, connected OCR according to new requirements, and wrote the technical documentation needed for AI-assisted development.",
+        "solution": "Refactored the legacy codebase into clearer frontend and backend patterns, integrated Google OCR, and documented requirements, flows, and implementation details in a way AI agents could follow. The documentation approach was later generalized into reusable Cursor Skills.",
+        "impact": "Changed the project from legacy code that often confused AI into a codebase where frontend and backend work could be completed by AI with much higher reliability. The same documentation method then affected the team's wider development process through Cursor Skills.",
+        "visual": {
+          "type": "flow",
+          "caption": "Wellcome Lucky Draw: from legacy code to AI-assisted delivery",
+          "steps": [
+            {
+              "label": "01",
+              "title": "Takeover",
+              "text": "Inherited the campaign project and learned the existing legacy behavior."
+            },
+            {
+              "label": "02",
+              "title": "Review & revamp",
+              "text": "Reorganized duplicated code and fixed vulnerabilities."
+            },
+            {
+              "label": "03",
+              "title": "OCR requirement",
+              "text": "Integrated Google OCR into the existing PHP and JavaScript flow."
+            },
+            {
+              "label": "04",
+              "title": "AI-friendly docs",
+              "text": "Documented frontend, backend, and workflow details so agents could work reliably."
+            },
+            {
+              "label": "05",
+              "title": "Reusable skill",
+              "text": "Generalized the documentation method into Cursor Skills for other projects."
+            }
+          ]
+        }
+      },
+      "technologies": ["PHP", "JavaScript", "jQuery", "CSS", "Google OCR", "MySQL", "SQL", "Cursor Skills", "AI agent evaluation", "AI-assisted development", "Technical documentation"],
+      "links": {
+        "github": null,
+        "live": null
+      }
+    },
+    {
+      "id": "druginsport",
+      "company": "firmstudio",
+      "period": "2025",
+      "title": "DrugInSport",
+      "subtitle": "Anti-Doping Drug Database",
+      "summary": "Public anti-doping drug lookup for ADOHK with a 10,000+ drug-record import pipeline.",
+      "description": "Public anti-doping drug lookup for ADOHK. UI by design team; I built all JavaScript and backend logic, including a 10,000+ drug-record import pipeline with chunked processing, memory tuning, approval flow, and scheduled launch.",
+      "highlights": [
+        "Built all JavaScript (jQuery) and Laravel 11 backend logic end to end.",
+        "Designed chunked Excel import for 10,000+ drug records with memory optimization.",
+        "Implemented approval flow and scheduled launch for production release."
+      ],
+      "caseStudy": {
+        "context": "DrugInSport is a drug database where admins import large batches of drugs, ingredients, and their relationships through an online portal.",
+        "problem": "Each import could process 10,000+ creates, updates, and deletes, while also checking relationship data, input errors, confirmation steps, and approval flow.",
+        "role": "Built the JavaScript and Laravel backend logic for the import workflow, validation flow, confirmation page, and approval handling.",
+        "solution": "Added memory-related logging, release-memory handling, chunked processing, and frontend handling for an environment that would otherwise time out.",
+        "impact": "Stabilized a repeated high-volume import process so the system could handle complex drug and ingredient updates reliably.",
+        "visual": {
+          "type": "imagePair",
+          "layout": "equal",
+          "caption": "DrugInSport portal and frontend visual reference",
+          "images": [
+            {
+              "label": "Portal",
+              "src": "assets/projects/druginsport/portal.png",
+              "alt": "DrugInSport admin portal"
+            },
+            {
+              "label": "Frontend",
+              "src": "assets/projects/druginsport/frontend.png",
+              "alt": "DrugInSport public frontend"
+            }
+          ]
+        }
+      },
+      "technologies": ["PHP 8.2", "Laravel 11", "jQuery", "Blade", "Vite", "MySQL", "PhpSpreadsheet"],
+      "links": {
+        "github": null,
+        "live": "https://www.druginsport.hk/en"
+      }
+    },
+    {
+      "id": "knsm",
+      "company": "firmstudio",
+      "period": "2024",
+      "title": "KNSM",
+      "subtitle": "Po Leung Kuk Kindergarten Management System",
+      "summary": "FirmStudio's most complex project — interconnected student, billing, and subsidy flows across 20+ schools, with Oracle accounting integration and 30+ reports.",
+      "description": "Multi-campus internal platform for Po Leung Kuk kindergartens and nurseries — reportedly FirmStudio's most complex project. Student management, fee records and settings, subsidies, refunds, enrollment and waitlist flows, temporary care, and extension services are all interconnected, with money logic spanning every module. Export files integrate with the Oracle accounting system; 30+ styled reports support daily school operations.",
+      "highlights": [
+        "Owned UI implementation and all money-related features — billing, subsidies, refunds, and fee settings across interconnected modules.",
+        "Built more than half of 30+ styled operational reports and Oracle AR/RA export integration.",
+        "Co-designed workflows when requirements were unclear; realigned with the team every other day under an unreasonably short timeline.",
+        "Maintained client trust through biweekly demos; praised by client and school principals."
+      ],
+      "caseStudy": {
+        "context": "KNSM is a multi-campus internal platform for Po Leung Kuk kindergartens and nurseries — reportedly FirmStudio's most complex project. It connects student management, fee records and settings, subsidies, refunds, enrollment and waitlist flows, temporary care, and extension services into one system where every feature relates to the others. Export files feed the Oracle accounting system; 30+ styled reports support day-to-day school operations.",
+        "problem": "Development began after the original project manager left, leaving requirements vague and early documentation incomplete. The replacement PM was still learning the domain, while 20+ schools each handled the same processes differently. The schedule was unreasonably tight for a system where money logic cuts across enrollment, student records, temporary care, and finance exports — isolated ticket work would not have been enough.",
+        "role": "I owned UI implementation, everything money-related — fee records, fee settings, subsidies, refunds — usage-flow adjustments, and more than half of the 30+ reports. Because billing touched nearly every module, my work had to stay aligned with enrollment, student management, temporary care, and Oracle export paths, not just a single backend area.",
+        "solution": "Success depended on team collaboration, not siloed delivery. We realigned understanding every other day, called out what did not fit the plan, and filled gaps the early specs missed. Developers became part of system design; the PM made final calls, but flows were shaped together. I implemented money logic end to end, adjusted usage flows as schools' real practices surfaced, and built reports schools could run their finance on.",
+        "impact": "Delivered a production platform serving 20+ campuses under extreme pressure, keeping client trust through biweekly demos. The client and school principals praised the outcome. The clearest lesson: on a system this interconnected, communication and clarified requirements mattered more than dividing work into isolated tasks.",
+        "visual": {
+          "type": "imagePair",
+          "layout": "equal",
+          "caption": "KNSM dashboard and navigation menu",
+          "images": [
+            {
+              "label": "Dashboard",
+              "src": "assets/projects/knsm/dashboard.png",
+              "alt": "KNSM dashboard overview"
+            },
+            {
+              "label": "Menu",
+              "src": "assets/projects/knsm/menu.png",
+              "alt": "KNSM navigation menu"
+            }
+          ]
+        }
+      },
+      "technologies": ["PHP 8", "Laravel 10", "Vue 3", "TypeScript", "Inertia.js", "Vuetify", "SQL Server", "Oracle accounting integration"],
+      "links": {
+        "github": null,
+        "live": null
+      }
+    },
+    {
+      "id": "hkab",
+      "company": "firmstudio",
+      "period": "2022–2023 · ops revamp 2025",
+      "title": "HKAB",
+      "subtitle": "Member Area & On-Premise Operations",
+      "summary": "Member portal, CMS integration, and 16-server on-premise ops; key procedures cut from 20+ min to 5–10 min.",
+      "description": "Member portal with granular permissions and CMS integration, plus 16-server on-premise operations covering CMS file sync, DB replication, backup, failover, restart procedures, and operation guide documentation. A troubled takeover restored through fast execution and candid client communication.",
+      "highlights": [
+        "Built member area permissions and core portal features.",
+        "Revamped 16-server operation scripts in 2025, cutting key procedures from 20+ minutes to 5–10 minutes.",
+        "Restored a severely delayed project close to legal escalation through tight PM reporting."
+      ],
+      "caseStudy": {
+        "context": "Joined HKAB in the middle-to-late stage, when the project was already too delayed to launch on time. The first priority was to regain client trust through visible progress.",
+        "problem": "In 2025, a serious hidden flaw was found in the operation scripts and procedures, damaging trust with the hosting-side team. The root cause had stayed unnoticed for two years.",
+        "role": "Worked with the PM to recover delivery momentum through daily extra hours and weekend focus, then later owned maintenance and the operation recovery work.",
+        "solution": "Found and fixed the root cause, then rebuilt the operation scripts from slow PHP scripts into clearer shell-based menu tools with status display, logs, warnings, and operator-focused guides.",
+        "impact": "Weekly delivery rebuilt client confidence for launch, while the 2025 ops revamp cut the main procedure from 20+ minutes to around 5 minutes and produced guides operators could actually follow.",
+        "visual": {
+          "type": "phaseFlow",
+          "caption": "HKAB: two recoveries, one trust problem",
+          "intro": "HKAB was not a single clean delivery story. It had two separate moments where trust was at risk: first before launch, then again two years later during operations.",
+          "phases": [
+            {
+              "label": "Phase 01",
+              "title": "Delivery recovery",
+              "prologue": "The first recovery was about credibility. We could not change the fact that the project was late, so the only way forward was to make progress visible every week.",
+              "description": "The project was already late when I joined. Before solving features, we had to prove to the client that the team could still deliver.",
+              "steps": [
+                {
+                  "label": "Late-stage takeover",
+                  "text": "Joined when launch timing was already unrealistic."
+                },
+                {
+                  "label": "Brute-force recovery",
+                  "text": "Daily extra hours and weekend focus to regain momentum."
+                },
+                {
+                  "label": "Weekly proof",
+                  "text": "Showed visible progress, collected feedback, and adjusted fast."
+                },
+                {
+                  "label": "Trust restored",
+                  "text": "The project stayed smooth through launch after confidence returned."
+                }
+              ]
+            },
+            {
+              "label": "Phase 02",
+              "title": "Ops recovery",
+              "prologue": "The second recovery was quieter but more dangerous. A hidden operations issue had stayed buried for two years, and the fix had to rebuild confidence with the people running the system.",
+              "description": "Two years later, a hidden operation flaw surfaced. The work shifted from feature delivery to root-cause fixing and operator-safe tooling.",
+              "steps": [
+                {
+                  "label": "Hidden flaw surfaced",
+                  "text": "A long-standing ops issue damaged trust with the hosting-side team."
+                },
+                {
+                  "label": "Root cause hunt",
+                  "text": "Traced and fixed a problem nobody had noticed for two years."
+                },
+                {
+                  "label": "Script redesign",
+                  "text": "Rebuilt slow PHP scripts into shell menus with status, colors, and logs."
+                },
+                {
+                  "label": "Operator-ready guide",
+                  "text": "Cut the main procedure from 20+ minutes to about 5, with warning and error handling."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "technologies": ["PHP", "Laravel 9", "Laravel Passport", "MySQL replication", "Blade", "Linux servers", "SSH deployment", "Artisan CLI ops scripts"],
+      "links": {
+        "github": null,
+        "live": null
+      }
+    },
+    {
+      "id": "corpsite1010",
+      "company": "firmstudio",
+      "period": "2025",
+      "title": "1O1O Corporate",
+      "subtitle": "CMS Revamp",
+      "summary": "CMS revamp for 1O1O Corporate Solutions — component page editor, version compare/approval, and form builder.",
+      "description": "Collaborated with a colleague to revamp the CMS behind 1O1O Corporate Solutions. Led CMS UI/UX, a component-based page editor, version compare and approval workflows, form builder, and ongoing refinements across the admin experience.",
+      "highlights": [
+        "Designed and built CMS UI/UX for editors managing the corporate marketing site.",
+        "Component-based page editor for flexible page composition from reusable blocks.",
+        "Version compare and approval workflow for safer content publishing.",
+        "Form builder and detail-level polish across the CMS admin."
+      ],
+      "caseStudy": {
+        "context": "Revamped an in-house CMS for the 1O1O Corporate website, working with another backend developer and integrating the CMS output into a frontend-built website.",
+        "problem": "The client had a high expectation for user-friendliness. My view was: if users must read a guide before they can use the CMS, the CMS design has already failed.",
+        "role": "Worked as a backend developer with roughly half of the backend scope, while directly designing and implementing the CMS UI and editor experience.",
+        "solution": "Built the form builder, component-based page editor, version comparison, approval workflow, and inline remarks that made component choices and edited content easier to understand on screen.",
+        "impact": "The clearer CMS guidance received strong feedback and became a reference point for future company CMS and design system standards.",
+        "visual": {
+          "type": "imagePair",
+          "caption": "1O1O Corporate CMS visual reference",
+          "images": [
+            {
+              "label": "CMS Screen",
+              "src": "assets/projects/1010-corporate/cms_screen.png",
+              "alt": "1O1O Corporate CMS screen"
+            },
+            {
+              "label": "1010 Logo",
+              "src": "assets/projects/1010-corporate/logo.svg",
+              "alt": "1O1O Corporate Solutions logo"
+            }
+          ]
+        }
+      },
+      "technologies": ["PHP", "Laravel", "Vue.js", "JavaScript", "CMS"],
+      "links": {
+        "github": null,
+        "live": "https://www.1010corporate.com/"
+      }
+    },
+    {
+      "id": "dentalmiles",
+      "company": "echk",
+      "period": "2020",
+      "title": "DentalMiles",
+      "subtitle": "Loyalty & Booking Platform",
+      "summary": "Dental loyalty and booking platform with points, rewards, and eShop in one system.",
+      "description": "Dental loyalty and booking platform combining points redemption, DentalMiles to CDE conversion, online booking with quota rules, Miles Rewards, and eShop features in one web system.",
+      "highlights": [
+        "Built points redemption and Miles Rewards flows.",
+        "Implemented online booking with quota rules and eShop features."
+      ],
+      "caseStudy": {
+        "collapsed": true
+      },
+      "technologies": ["PHP", "Laravel", "JavaScript", "Vue.js", "MySQL", "REST API"],
+      "links": {
+        "github": null,
+        "live": "https://www.dentalmiles.com/"
+      }
+    },
+    {
+      "id": "hippos",
+      "company": "echk",
+      "period": "2020 — 2022",
+      "title": "HIPPOS",
+      "subtitle": "iPad POS, Online POS & E-Commerce Platform",
+      "summary": "Configurable multi-tenant POS and online shop platform with membership, points redemption, complex discounts, payments, member cards, and quota-based booking.",
+      "description": "HIPPOS is a platform connecting iPad POS and online shop operations. Beyond inventory, it covers membership, points redemption, supermarket-level configurable discount rules, online payment, member cards, and quota-based schedule booking. New client onboarding could be handled mainly through configuration instead of hardcoded rules. My ownership covered POS APIs, Online POS UI/UX and features, online shop backend, database design, and member card functionality, excluding only the core inventory and product-entry basics.",
+      "highlights": [
+        "Built POS APIs and Online POS UI/UX features connecting iPad POS operations with the online shop.",
+        "Designed online shop backend and database structures for multi-tenant client configuration.",
+        "Implemented membership, points redemption, online payment, and member card functionality.",
+        "Supported user-configurable discount rules and quota-based schedule booking without hardcoded client logic."
+      ],
+      "caseStudy": {
+        "collapsed": true
+      },
+      "technologies": ["PHP", "Laravel", "JavaScript", "Vue.js", "MySQL", "REST API", "POS API integration", "Payment gateway integration", "Database design"],
+      "links": {
+        "github": null,
+        "live": null
+      }
+    }
+  ],
+  "education": [
+    {
+      "institution": "The Hong Kong Institute of Vocational Education (Tsing Yi)",
+      "degree": "Diploma of Software Engineering (GPA 3.23)",
+      "period": "2018 — 2020"
+    }
+  ],
+  "contact": {
+    "email": "lhs.cyrus@gmail.com",
+    "github": "https://github.com/lhscyrus-work",
+    "location": "Hong Kong"
+  }
+}
